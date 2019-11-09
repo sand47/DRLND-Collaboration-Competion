@@ -1,6 +1,6 @@
 # DRLND-Continuous-Control
 
----
+
 Multi-agent playing tennis to bounce a ball over a net using MADDPG
 
 <br>
