@@ -1,12 +1,12 @@
 # DRLND-Continuous-Control
 
 ---
-Moving double-jointed arm to target locations using DDGP
+Multi-agent playing tennis to bounce a ball over a net using MADDPG
 
 <br>
 
 
-![Trained Agent](https://github.com/sand47/DRLND-Continuous-Control/blob/master/images/reacher.gif)
+![Trained Agent](https://github.com/sand47/DRLND-Collaboration-Competion/blob/master/images/tennis.gif)
 
 <br>
 
