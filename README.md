@@ -47,6 +47,6 @@ Next, before starting the environment utilising the corresponding prebuilt app f
 ## Instructions
 Then run the [`Tennis.ipynb`](https://github.com/sand47/DRLND-Collaboration-Competion/blob/master/Tennis.ipynb) notebook using the drlnd kernel to train the MADDPG agent.
 
-Once trained the model weights will be saved in the models directory with filenames as `checkpoint_actor.pth` and `checkpint_critic.pth`.
+Once trained the model weights will be saved in the model directory with filenames as `checkpoint_actor.pth` and `checkpint_critic.pth`.
 
 Read the report file for more details about the description of the implementation and a plot of rewards per episode.
