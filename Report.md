@@ -1,7 +1,7 @@
 ## DRL - DDPG Algorithm - Reacher Continuous Control
 
 ### Model Architecture
-This project utilised the MADDPG (Deep Deterministic Policy Gradient) architecture outlined in the
+This project utilised the MADDPG (Deep Deterministic Policy Gradient) architecture outlined below. 
 
 ## State and Action Spaces
 In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
@@ -21,10 +21,13 @@ The original DDPG algorithm from which I extended to create the MADDPG version, 
 They highlight that DDPG can be viewed as an extension of Deep Q-learning to continuous tasks
 
 For the DDPG foundation, I used [this vanilla, single-agent DDPG](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum) as a template. 
-Then, to make this algorithm suitable for the multiple competitive agents in the Tennis environment, I implemented components discussed in [this paper](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf), _Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments_, by Lowe and Wu, along with other researchers from OpenAI, UC Berkeley, and McGill University. Most notable, I implemented their variation of the actor-critic method (see Figure 1), which I discuss in the following section.
+Then, to make this algorithm suitable for the multiple competitive agents in the Tennis environment, I implemented a variation of the actor-critic method (see Figure 1), which was discuss in the class session.
 
-Lastly, I further experimented with components of the DDPG algorithm based on other concepts covered in Udacity's classroom and lessons. My implementation of this algorithm (including various customizations) are discussed below.
-The MADDPG agent is contained in [`ddpg_agent.py`](https://github.com/sand47/DRLND-Collaboration-Competion/blob/master/maddpg_agents.py)
+The MADDPG agent is contained in [`maddpg_agent.py`](https://github.com/sand47/DRLND-Collaboration-Competion/blob/master/maddpg_agents.py)
+
+<img src="assets/multi-agent-actor-critic.png" width="40%" align="top-left" alt="" title="Multi-Agent Actor-Critic" />
+
+> _Figure 1: Multi-agent decentralized actor with centralized critic ([Lowe and Wu et al](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf))._
 
 ### MADDPG Hyper Parameters
 - n_episodes (int)      : maximum number of training episodes
