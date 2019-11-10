@@ -23,7 +23,10 @@ OU_THETA = 0.15         # Ornstein-Uhlenbeck noise parameter, speed of mean reve
 EPS_START = 5.0         # initial value for epsilon in noise decay process in Agent.act()
 EPS_EP_END = 300        # episode to end the noise decay process
 EPS_FINAL = 0           # final value for epsilon after decay
-
+SOLVED_SCORE = 0.5
+CONSEC_EPISODES = 100
+PRINT_EVERY = 10
+ADD_NOISE = True
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
